@@ -7,11 +7,11 @@ import {
 const Video = ({ activeLesson, activeModule }) => {
   return <div>
     <strong>Módulo {activeModule.title}</strong>
-    <span>Lesson {activeLesson.title}</span>
+    <span>{activeLesson.title}</span>
     </div>
 };
 
 export default connect(state => ({
-  activeLesson: state.activeLesson,
-  activeModule: state.activeModule
+  activeModule: state.course.activeModule,
+  activeLesson: state.course.activeLesson
 }))(Video);
