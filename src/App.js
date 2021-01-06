@@ -1,6 +1,4 @@
 import React, {
-  useState,
-  useEffect
 } from "react";
 import { Provider } from "react-redux"
 import Sidebar from "./components/Sidebar";
